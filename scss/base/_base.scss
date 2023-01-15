@@ -3,6 +3,7 @@ body {
 
     color: var(--primary-text-color);
     background-color: var(--white-color);
+    
 }
 
 *::after,
@@ -17,10 +18,7 @@ img {
 }
 
 ul{
-    
+    margin: 0;
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-}

@@ -1,5 +1,5 @@
 .header {
-
+position: relative;
     border-bottom: 1px solid var(--color-border);
 
     &__conteiner {
@@ -13,17 +13,30 @@
         margin-right: auto;
     }
         &__nav {
-            justify-content: space-around;
+            
             align-items: center;
             flex-grow: 1;
             display: flex;
+
+        @media(min-width:768px){
+           justify-content: space-around;
+            }
         }
+        
 }
 
 .header__contact {
-    display: flex;
+    @media (min-width:768px) {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    @media(min-width: 1200px){
+    
     justify-content: flex-end;
-    flex-grow: 1;
+    
+        }
+    
 }
 
 .menu.header__contact--menu{
@@ -127,12 +140,12 @@
     padding: 0;
     border:none;
     background-color: transparent;
-    cursor: pointer;
+
     @media (min-width: 768px) {
         display: none;
     }
 }
 
-.burger:hover{
-    fill: var(--accent-color);
+.burger.icon-close{
+    display: none;
 }
