@@ -65,7 +65,8 @@ position: relative;
 }
 }
 
-.menu__link--current {
+
+.menu__link.menu__link--current {
     color: var(--accent-color);
 }
 
