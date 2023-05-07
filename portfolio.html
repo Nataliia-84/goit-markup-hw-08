@@ -60,15 +60,15 @@
         <section>
           <div class="conteiner">
             <h1 class="visually__hidden">projects</h1>
-            <ul class="filtr__list">
-                <li> <button class="filtr__button" type="button">Усі</button></li>
-                <li> <button class="filtr__button" type="button">Веб-сайти</button></li>
-                <li> <button class="filtr__button" type="button">Додатки</button></li>
-                <li> <button class="filtr__button" type="button">Дизайн</button></li>
-                <li> <button class="filtr__button" type="button">Маркетинг</button></li>
+            <ul class="filtr__list js-list">
+                <li> <button class="filtr__button " type="button" data-filtr="all">Усі</button></li>
+                <li> <button class="filtr__button" type="button"data-filtr="web">Веб-сайти</button></li>
+                <li> <button class="filtr__button" type="button" data-filtr="dop">Додатки</button></li>
+                <li> <button class="filtr__button" type="button" data-filtr="desing">Дизайн</button></li>
+                <li> <button class="filtr__button" type="button" data-filtr="marketing">Маркетинг</button></li>
             </ul>
-            <ul class="projects__list">
-                <li class="project__item">
+            <ul class="projects__list " >
+                <li class="project__item" data-filtr="web">
                   <div class="project__card">
                     
                     <a class="card__box" href="#">
@@ -95,7 +95,7 @@
                  </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="desing">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -120,7 +120,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="dop">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -142,7 +142,7 @@
                     </div>
 
                   </li>
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="marketing">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -167,7 +167,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="dop">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -191,7 +191,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="web">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -216,7 +216,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="desing">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -241,7 +241,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="marketing">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -266,7 +266,7 @@
                     </div>
                   </li>
 
-                  <li class="project__item">
+                  <li class="project__item" data-filtr="dop">
                     <div class="card__project">
                       <a class="card__box" href="#">
                         <div class="thumb">
@@ -389,5 +389,6 @@
         </div>
       </div> 
       <script src="./js/mobile_menu.js"></script>
+      <script src="./js/filtr.js"></script>
   </body>
 </html>
